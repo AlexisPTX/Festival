@@ -21,3 +21,12 @@ Le bouton « Compte » permet à un utilisateur de s’inscrire sans obligatoi
 Le bouton « Horaires » quant à lui permet de voir le programme ainsi que le nombre de places restantes pour chaque jour.
 
 Ensuite on retrouve le même bas de page qui permet à l’utilisateur d’accéder aux différents réseaux sociaux du festival ou alors de contacter le festival par téléphone ou par mail.
+
+Concernant le chiffrement du mot de passe de l’utilisateur.
+J’ai utilisé le logo VS Code pour programmer mon site cependant en voulant chiffrer le mot de passe en MD5 le logiciel m’a conseillé d’utiliser la fonction password_hash car le chiffrement MD5 est obsolète.
+Or ce n’est qu’après que j’ai remarqué que les mots de passe possédaient le même début de chiffrement, j’aurais donc pu utiliser une autre norme de chiffrement que le MD5 tel que le SHA-256.
+
+Une fois que le mot de passe est utilisé pour connecter l’utilisateur, celui n’est pas communiqué entre les différentes pages justement pour éviter que l’on puisse le récupérer pour le déchiffrer, ce qui a pour effet de déconnecter l’utilisateur à chaque actualisation ou redirection de page.
+
+Dans l’URL de certaine page on peut voir deux variables : login et reset
+La variable login permet de savoir si l’utilisateur essaie de faire une réservation ou non, tandis que reset permet de savoir si c’est la première fois que l’utilisateur entre sur la page pour éviter d’ajouter deux fois la réservation d’un utilisateur dans la base de données.
