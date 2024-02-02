@@ -1,8 +1,9 @@
-Voici le site web d'un Festival réalisé pour le sujet de TP de Base de données. Le site possède les fonctionnalités suivantes :
-	• Inscription et connexion d'un utilisateur
-	• Possibilité de réserver des places pour le festival
-	• Stockage dans une base de données en hashant le mot de passe de connexion
-	• Récapitulatif de ses réservations disponibles
+Voici le site web d'un Festival réalisé pour le sujet de TP de Base de données. 
+Le site possède les fonctionnalités suivantes :
+- Inscription et connexion d'un utilisateur
+- Possibilité de réserver des places pour le festival
+- Stockage dans une base de données en hashant le mot de passe de connexion
+- Récapitulatif de ses réservations disponibles
 
 Sur la page d'accueil (index.php), on peut voir différents articles pouvant mener au site web ayant écrit l'article sur le festival, mais ici, les boutons ne mènent sur aucun lien. On peut ensuite retrouver le formulaire de réservation où l'utilisateur va renseigner ses informations : le type de places, le nombre de places, les jours souhaités ainsi qu'un commentaire s'il le souhaite. Si l'utilisateur réserve plus de places que le nombre disponible, un message d'erreur lui sera alors affiché, lui indiquant le manque de places. Bien sûr, un utilisateur ne peut pas réserver 0 place.
 
